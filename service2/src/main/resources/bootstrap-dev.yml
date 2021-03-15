@@ -1,0 +1,14 @@
+spring:
+  application:
+    name: service2
+  cloud:
+    #服务注册和发现
+    nacos:
+      discovery:
+        server-addr: 106.14.160.249:8848
+        service: ${spring.application.name}
+        group: service2-dev
+      config:
+        group: service2-dev
+        server-addr: 106.14.160.249:8848
+        file-extension: yml

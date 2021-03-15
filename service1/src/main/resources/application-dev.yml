@@ -1,0 +1,29 @@
+server:
+  port: 8889
+spring:
+  application:
+    name: service1
+  profiles:
+    active: dev
+  zipkin:
+    # 本地测试生产都需加上http，
+    base-url: http://127.0.0.1:9411
+    locator:
+      discovery:
+        enabled: true
+    enabled: true
+    # 防止SpringCloud将服务名改为zipkin的url
+    discovery-client-enabled: false
+    service:
+      name: ${spring.application.name}
+    sender:
+      # 设置使用http方式的传输数据
+      type: web
+  sleuth:
+    web:
+      client:
+        enabled: true
+      enabled: true
+    sampler:
+      # 抽样率，默认是0.1（90%的数据会被丢弃）这边为了测试方便，将其设置为1.0，即所有的数据都会上报给zipkin
+      probability: 1.0
