@@ -86,7 +86,7 @@
                 <artifactId>spring-boot-maven-plugin</artifactId>
                 <version>2.3.7.RELEASE</version>
                 <configuration>
-                    <mainClass>com.hbb.demo.service2.Service2Application</mainClass>
+                    <mainClass>Service2Application</mainClass>
                 </configuration>
                 <executions>
                     <execution>

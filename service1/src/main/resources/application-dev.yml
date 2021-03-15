@@ -3,8 +3,8 @@ server:
 spring:
   application:
     name: service1
-  profiles:
-    active: dev
+  #  profiles:
+  #    active: dev
   zipkin:
     # 本地测试生产都需加上http，
     base-url: http://127.0.0.1:9411
