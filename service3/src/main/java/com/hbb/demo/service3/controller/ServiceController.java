@@ -15,7 +15,7 @@ public class ServiceController {
     @ResponseBody
     public Map<String, String> service1Fun1() {
         Map map = new HashMap();
-        map.put("id", "1");
+        map.put("id", "service1");
         return map;
     }
 }
