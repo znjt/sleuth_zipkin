@@ -11,10 +11,9 @@
 
     <artifactId>serviceFeignApi</artifactId>
     <packaging>pom</packaging>
-
+    <description>微服务Feign API集合</description>
     <name>serviceFeignApi</name>
-    <!-- FIXME change it to the project's website -->
-    <url>http://www.example.com</url>
+
     <modules>
         <module>service1FeignApi</module>
         <module>service2FeignApi</module>
@@ -22,6 +21,10 @@
     </modules>
 
     <dependencies>
+        <dependency>
+            <groupId>org.springframework.cloud</groupId>
+            <artifactId>spring-cloud-starter-openfeign</artifactId>
+        </dependency>
     </dependencies>
 
 

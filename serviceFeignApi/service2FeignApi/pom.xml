@@ -13,14 +13,12 @@
 
     <name>service2FeignApi</name>
 
-
-
     <dependencies>
-        <dependency>
-            <groupId>com.hbb.demo</groupId>
-            <artifactId>common-feign</artifactId>
-            <version>${project.version}</version>
-        </dependency>
+        <!--  <dependency>
+              <groupId>com.hbb.demo</groupId>
+              <artifactId>common-feign</artifactId>
+              <version>${project.version}</version>
+          </dependency>-->
     </dependencies>
 
 
