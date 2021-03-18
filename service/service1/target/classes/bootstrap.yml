@@ -1,0 +1,13 @@
+spring:
+  profiles:
+    # @符合识别，需要在pom中增加如下标签
+    # <resources>
+    # <!--开启过滤，用指定的参数替换directory下的文件中的参数-->
+    #    <resource>
+    #    <directory>src/main/resources</directory>
+    #    <filtering>true</filtering>
+    #    </resource>
+    #    </resources>
+    active: dev
+  application:
+    name: service1

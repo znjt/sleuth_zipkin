@@ -1,0 +1,21 @@
+spring:
+  application:
+    name: service1
+  cloud:
+    #服务注册和发现
+    nacos:
+      discovery:
+        server-addr: 106.14.160.249:8848
+        service: ${spring.application.name}
+        group: service-dev
+      config:
+        # group: DEFAULT_GROUP
+        server-addr: ${spring.cloud.nacos.discovery.server-addr}
+        file-extension: yml
+        # 共享配置
+        shared-configs:
+          #  - dataId 的完整格式如下: ${prefix}-${spring.profiles.active}.${file-extension},prefix 默认为 spring.application.name 的值
+          - data-id: applicaion.${spring.cloud.nacos.config.file-extension}
+            group: DEFAULT_GROUP
+            # 让扩展配置刷新
+            refresh: true

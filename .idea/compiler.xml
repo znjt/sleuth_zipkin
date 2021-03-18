@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="CompilerConfiguration">
+    <annotationProcessing>
+      <profile default="true" name="Default" enabled="true" />
+      <profile name="Maven default annotation processors profile" enabled="true">
+        <sourceOutputDir name="target/generated-sources/annotations" />
+        <sourceTestOutputDir name="target/generated-test-sources/test-annotations" />
+        <outputRelativeToContentRoot value="true" />
+        <module name="service1FeignApi" />
+        <module name="service1" />
+        <module name="service2" />
+        <module name="service2FeignApi" />
+        <module name="service3" />
+        <module name="service3FeignApi" />
+        <module name="service" />
+        <module name="common-feign" />
+      </profile>
+    </annotationProcessing>
+    <bytecodeTargetLevel>
+      <module name="common-feign" target="1.8" />
+      <module name="service" target="1.8" />
+      <module name="service1" target="1.8" />
+      <module name="service1FeignApi" target="1.8" />
+      <module name="service2" target="1.8" />
+      <module name="service2FeignApi" target="1.8" />
+      <module name="service3" target="1.8" />
+      <module name="service3FeignApi" target="1.8" />
+      <module name="serviceFeignApi" target="1.8" />
+      <module name="sleuth_zipkin" target="1.8" />
+    </bytecodeTargetLevel>
+  </component>
+</project>

@@ -10,7 +10,6 @@
     <modelVersion>4.0.0</modelVersion>
 
     <artifactId>service1FeignApi</artifactId>
-    <!--    <version>0.0.1-SNAPSHOT</version>-->
 
     <name>service1FeignApi</name>
 

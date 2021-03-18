@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/common-feign/common-feign.iml" filepath="$PROJECT_DIR$/common-feign/common-feign.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service.iml" filepath="$PROJECT_DIR$/service/service.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service1/service1.iml" filepath="$PROJECT_DIR$/service/service1/service1.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceFeignApi/service1FeignApi/service1FeignApi.iml" filepath="$PROJECT_DIR$/serviceFeignApi/service1FeignApi/service1FeignApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service2/service2.iml" filepath="$PROJECT_DIR$/service/service2/service2.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceFeignApi/service2FeignApi/service2FeignApi.iml" filepath="$PROJECT_DIR$/serviceFeignApi/service2FeignApi/service2FeignApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/service/service3/service3.iml" filepath="$PROJECT_DIR$/service/service3/service3.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceFeignApi/service3FeignApi/service3FeignApi.iml" filepath="$PROJECT_DIR$/serviceFeignApi/service3FeignApi/service3FeignApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/serviceFeignApi/serviceFeignApi.iml" filepath="$PROJECT_DIR$/serviceFeignApi/serviceFeignApi.iml" />
+      <module fileurl="file://$PROJECT_DIR$/sleuth_zipkin.iml" filepath="$PROJECT_DIR$/sleuth_zipkin.iml" />
+    </modules>
+  </component>
+</project>

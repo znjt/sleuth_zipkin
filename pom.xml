@@ -108,28 +108,39 @@
                 </executions>
             </plugin>
         </plugins>
+
+        <finalName>${project.name}</finalName>
+        <resources>
+            <!--开启过滤，用指定的参数替换directory下的文件中的参数-->
+            <resource>
+                <directory>src/main/resources</directory>
+                <filtering>true</filtering>
+            </resource>
+        </resources>
     </build>
 
     <profiles>
-        <!-- 开发配置 application-dev.yml -->
         <profile>
             <id>dev</id>
             <properties>
-                <spring.profiles.active>dev</spring.profiles.active>
+                <!-- 环境标识，需要与配置文件的名称相对应 -->
+                <profiles.active>dev</profiles.active>
             </properties>
+            <activation>
+                <!-- 默认环境 -->
+                <activeByDefault>true</activeByDefault>
+            </activation>
         </profile>
-        <!-- 测试配置 application-test.yml -->
         <profile>
             <id>test</id>
             <properties>
-                <spring.profiles.active>test</spring.profiles.active>
+                <profiles.active>test</profiles.active>
             </properties>
         </profile>
-        <!-- 发布配置 application-prod.yml -->
         <profile>
             <id>prod</id>
             <properties>
-                <spring.profiles.active>prod</spring.profiles.active>
+                <profiles.active>prod</profiles.active>
             </properties>
         </profile>
     </profiles>
